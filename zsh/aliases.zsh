@@ -25,6 +25,8 @@ alias tf='tail -f'
 alias cl='clear'
 alias ka9='killall -9'
 alias k9='kill -9'
+alias zshconfig="s ~/.zshrc"
+alias ohmyzsh="s ~/.oh-my-zsh"
 
 # ruby
 alias rc='rails c'
@@ -33,4 +35,4 @@ alias rdm='rake db:migrate'
 alias rdr='rake db:rollback'
 
 # utils
-alias weather='curl -4 http://wttr.in/'
+alias weather='curl -4 http://wttr.in/Phuket'
