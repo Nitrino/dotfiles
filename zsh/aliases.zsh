@@ -40,3 +40,4 @@ alias weather='curl -4 http://wttr.in/Phuket'
 # work projects
 alias jrota='cd /Users/nitrino/develop/aviasales/jr-ota/'
 alias mak='cd /Users/nitrino/develop/aviasales/makmak/code/'
+alias jet='cd /Users/nitrino/develop/aviasales/jet/code/'
