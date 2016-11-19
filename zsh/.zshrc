@@ -99,6 +99,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+eval "$(hub alias -s)"
+
 if [ -f ~/.zsh/aliases.zsh ]; then
     source ~/.zsh/aliases.zsh
     print "200: load aliases ~/.zsh/aliases.zsh"
