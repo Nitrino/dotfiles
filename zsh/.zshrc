@@ -112,3 +112,7 @@ if [ -f ~/.zsh/exports.zsh ]; then
 else
     print "404: ~/.zsh/exports.zsh not found."
 fi
+
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
