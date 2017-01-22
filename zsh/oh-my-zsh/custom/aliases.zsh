@@ -41,5 +41,6 @@ alias weather='curl -4 http://wttr.in/Phuket'
 alias jrota='cd /Users/nitrino/develop/aviasales/jr-ota/'
 alias mak='cd /Users/nitrino/develop/aviasales/makmak/code/'
 alias jet='cd /Users/nitrino/develop/aviasales/jet/code/'
+alias dot='cd /Users/nitrino/develop/dotfiles'
 
 eval "$(hub alias -s)"
