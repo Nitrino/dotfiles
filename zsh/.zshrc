@@ -4,26 +4,15 @@ export ZSH=/Users/nitrino/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ducknorris"
-
-POWERLINE_DETECT_SSH="true"
-POWERLINE_GIT_CLEAN="✔"
-POWERLINE_GIT_DIRTY="✘"
-POWERLINE_GIT_ADDED="%F{green}✚%F{black}"
-POWERLINE_GIT_MODIFIED="%F{blue}✹%F{black}"
-POWERLINE_GIT_DELETED="%F{red}✖%F{black}"
-POWERLINE_GIT_UNTRACKED="%F{yellow}✭%F{black}"
-POWERLINE_GIT_RENAMED="➜"
-POWERLINE_GIT_UNMERGED="═"
-
-COMPLETION_WAITING_DOTS="true"
+# ZSH_THEME="ducknorris"
+ZSH_THEME="nitrino"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -41,7 +30,7 @@ COMPLETION_WAITING_DOTS="true"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -94,27 +83,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-eval "$(hub alias -s)"
-
-if [ -f ~/.zsh/aliases.zsh ]; then
-    source ~/.zsh/aliases.zsh
-    print "200: load aliases ~/.zsh/aliases.zsh"
+if [ -f $ZSH_CUSTOM/aliases.zsh ]; then
+    source $ZSH_CUSTOM/aliases.zsh
+    print "200: load aliases $ZSH_CUSTOM/aliases.zsh"
 else
-    print "404: ~/.zsh/aliases.zsh not found."
+    print "404: $ZSH_CUSTOM/aliases.zsh not found."
 fi
 
-if [ -f ~/.zsh/exports.zsh ]; then
-    source ~/.zsh/exports.zsh
-    print "200: load aliases ~/.zsh/exports.zsh"
+if [ -f $ZSH_CUSTOM/exports.zsh ]; then
+    source $ZSH_CUSTOM/exports.zsh
+    print "200: load aliases $ZSH_CUSTOM/exports.zsh"
 else
-    print "404: ~/.zsh/exports.zsh not found."
+    print "404: $ZSH_CUSTOM/exports.zsh not found."
 fi
-
-export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
