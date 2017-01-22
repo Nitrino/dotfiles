@@ -87,14 +87,14 @@ source $ZSH/oh-my-zsh.sh
 
 if [ -f $ZSH_CUSTOM/aliases.zsh ]; then
     source $ZSH_CUSTOM/aliases.zsh
-    print "200: load aliases $ZSH_CUSTOM/aliases.zsh"
+    print "200: load aliases.zsh"
 else
     print "404: $ZSH_CUSTOM/aliases.zsh not found."
 fi
 
 if [ -f $ZSH_CUSTOM/exports.zsh ]; then
     source $ZSH_CUSTOM/exports.zsh
-    print "200: load aliases $ZSH_CUSTOM/exports.zsh"
+    print "200: load exports.zsh"
 else
     print "404: $ZSH_CUSTOM/exports.zsh not found."
 fi
