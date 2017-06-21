@@ -98,3 +98,6 @@ if [ -f $ZSH_CUSTOM/exports.zsh ]; then
 else
     print "404: $ZSH_CUSTOM/exports.zsh not found."
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
