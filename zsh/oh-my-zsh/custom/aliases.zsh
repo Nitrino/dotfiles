@@ -12,9 +12,7 @@ alias ga='git add'
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
-alias cdnginx='cd /usr/local/etc/nginx/'
-alias cdphp='cd /usr/local/etc/php/7.0/'
-
+alias .....='cd ../../../../'
 # ps
 alias psa="ps aux"
 alias psg="ps aux | grep "
@@ -42,5 +40,6 @@ alias jrota='cd /Users/nitrino/develop/aviasales/jr-ota/'
 alias mak='cd /Users/nitrino/develop/aviasales/makmak/code/'
 alias jet='cd /Users/nitrino/develop/aviasales/jet/code/'
 alias dot='cd /Users/nitrino/develop/dotfiles'
+alias sm='cd /Users/nitrino/develop/hoodies/saudia_milk/code'
 
 eval "$(hub alias -s)"
