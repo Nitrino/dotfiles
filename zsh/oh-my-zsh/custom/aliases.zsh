@@ -25,6 +25,7 @@ alias ka9='killall -9'
 alias k9='kill -9'
 alias zshconfig="s ~/.zshrc"
 alias ohmyzsh="s ~/.oh-my-zsh"
+alias lk="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
 
 # ruby
 alias rc='rails c'
