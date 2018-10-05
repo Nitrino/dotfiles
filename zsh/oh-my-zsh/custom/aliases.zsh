@@ -43,6 +43,7 @@ eval $(thefuck --alias)
 alias dot='cd /Users/nitrino/develop/dotfiles'
 alias bb='cd /Users/nitrino/develop/icoyard/bookbuilding/code'
 alias qb='cd /Users/nitrino/develop/quickblox/qbex'
+alias qbr='cd /Users/nitrino/develop/quickblox/qbex && iex -S mix phx.server'
 alias bbr='hivemind /Users/nitrino/develop/icoyard/bookbuilding/code/Procfile.dev'
 
 eval "$(hub alias -s)"
