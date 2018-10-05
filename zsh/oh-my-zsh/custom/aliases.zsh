@@ -32,16 +32,17 @@ alias rc='rails c'
 alias rs='rails s'
 alias rdm='rake db:migrate'
 alias rdr='rake db:rollback'
+alias be='bundle exec'
 
 # utils
 alias weather='curl -4 http://wttr.in/Phuket'
 alias lc='colorls -r'
 eval $(thefuck --alias)
-# work projects
-alias jrota='cd /Users/nitrino/develop/aviasales/jr-ota/'
-alias mak='cd /Users/nitrino/develop/aviasales/makmak/code/'
-alias jet='cd /Users/nitrino/develop/aviasales/jet/code/'
+
+# projects
 alias dot='cd /Users/nitrino/develop/dotfiles'
-alias sm='cd /Users/nitrino/develop/hoodies/saudia_milk/code'
+alias bb='cd /Users/nitrino/develop/icoyard/bookbuilding/code'
+alias qb='cd /Users/nitrino/develop/quickblox/qbex'
+alias bbr='hivemind /Users/nitrino/develop/icoyard/bookbuilding/code/Procfile.dev'
 
 eval "$(hub alias -s)"
