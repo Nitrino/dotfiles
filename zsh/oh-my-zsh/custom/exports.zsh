@@ -4,6 +4,7 @@ export PATH="$PATH:/Users/nitrino/Library/Android/sdk/platform-tools"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/bin/elixir:$PATH"
 export PATH="/usr/local/mysql-5.7.23-macos10.13-x86_64/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 export PYENV_ROOT=/usr/local/var/pyenv
 export GPG_TTY=$(tty)
