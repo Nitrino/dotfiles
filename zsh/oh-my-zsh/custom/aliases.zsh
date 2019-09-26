@@ -37,13 +37,15 @@ alias be='bundle exec'
 # utils
 alias weather='curl -4 http://wttr.in/Phuket'
 alias lc='colorls -r'
-eval $(thefuck --alias)
 
 # projects
 alias dot='cd /Users/nitrino/develop/dotfiles'
 alias bb='cd /Users/nitrino/develop/icoyard/bookbuilding/code'
 alias qb='cd /Users/nitrino/develop/quickblox/qbex'
 alias qbr='cd /Users/nitrino/develop/quickblox/qbex && iex -S mix phx.server'
+alias sg='cd /Users/nitrino/develop/quickblox/sip_gateway'
+alias sc='cd /Users/nitrino/develop/quickblox/sip_client'
+alias es='cd /Users/nitrino/develop/personal/easysubs'
 alias bbr='hivemind /Users/nitrino/develop/icoyard/bookbuilding/code/Procfile.dev'
 
 eval "$(hub alias -s)"
