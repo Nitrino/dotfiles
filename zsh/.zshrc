@@ -49,12 +49,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+plugins=(git)
 
 # User configuration
-
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,32 +80,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-if [ -f $ZSH_CUSTOM/aliases.zsh ]; then
-    source $ZSH_CUSTOM/aliases.zsh
-    print "200: load aliases.zsh"
+if [ -f $ZSH_CUSTOM/config.zsh ]; then
+    source $ZSH_CUSTOM/config.zsh
+    print "200: load config.zsh"
 else
-    print "404: $ZSH_CUSTOM/aliases.zsh not found."
+    print "404: $ZSH_CUSTOM/config.zsh not found."
 fi
 
-if [ -f $ZSH_CUSTOM/exports.zsh ]; then
-    source $ZSH_CUSTOM/exports.zsh
-    print "200: load exports.zsh"
-else
-    print "404: $ZSH_CUSTOM/exports.zsh not found."
-fi
-if [ -f $ZSH_CUSTOM/private_exports.zsh ]; then
-    source $ZSH_CUSTOM/private_exports.zsh
-    print "200: load private_exports.zsh"
-else
-    print "404: $ZSH_CUSTOM/private_exports.zsh not found."
-fi
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 eval "$(rbenv init -)"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+. $(brew --prefix asdf)/asdf.sh
